@@ -1,0 +1,18 @@
+[general]
+import = ["zellij.toml"]
+
+
+[keyboard]
+bindings = [
+
+  # copy and paste
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "P", mods = "Control|Shift", action = "Paste" },
+
+  # font
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+
+  { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "Q", mods = "Control|Shift", action = "Quit" },
+]

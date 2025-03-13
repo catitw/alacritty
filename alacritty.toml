@@ -1,0 +1,33 @@
+[general]
+live_config_reload = true
+
+import = ["themes/catppuccin/catppuccin-mocha.toml", "keyboard/keyboard.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+
+[window]
+dimensions = { columns = 160, lines = 40 }
+padding = { x = 10, y = 8 }
+opacity = 0.95
+blur = true
+
+[scrolling]
+history = 100000 # the max valid value
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+blink_interval = 500
+
+[terminal]
+# https://zellij.dev/documentation/faq#copy--paste-isnt-working-how-can-i-fix-this
+osc52 = "CopyPaste"
+
+[font]
+size = 13
+
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+bold = { family = "FiraCode Nerd Font Mono", style = "Bold" }
+italic = { family = "FiraCode Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "FiraCode Nerd Font Mono", style = "Bold Italic" }
