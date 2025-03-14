@@ -1,5 +1,5 @@
 [general]
-import = ["zellij.toml"]
+import = []
 
 
 [keyboard]
@@ -13,6 +13,9 @@ bindings = [
   { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
   { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
 
-  { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
-  { key = "Q", mods = "Control|Shift", action = "Quit" },
+  # disable following window management options, zellij will do it.
+  # { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
+  # { key = "Q", mods = "Control|Shift", action = "Quit" },
+
+  { key = "Q", mods = "Control|Shift|Alt", action = "Quit" },
 ]
