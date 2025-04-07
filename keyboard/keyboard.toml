@@ -14,8 +14,8 @@ bindings = [
   { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
 
   # disable following window management options, zellij will do it.
-  # { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
-  # { key = "Q", mods = "Control|Shift", action = "Quit" },
+  { key = "T", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "Q", mods = "Control|Shift", action = "Quit" },
 
   { key = "Q", mods = "Control|Shift|Alt", action = "Quit" },
 ]
